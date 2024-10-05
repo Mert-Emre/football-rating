@@ -1,0 +1,78 @@
+.date-picker {
+  background-color: #2c2c2c;
+  width: 25rem;
+  border-radius: 1rem;
+  color: #f1f3f5;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.picker-year-month {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.6rem 1rem 0 1rem;
+  font-size: 2rem;
+}
+
+.picker-year-month div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow-icon {
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.arrow-icon:hover {
+  background-color: #f1f3f5;
+  color: #278439;
+}
+
+.day-names-row {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-items: center;
+  font-weight: 500;
+  border-bottom: 1px solid #f1f3f5;
+  padding: 1.2rem 0.6rem;
+}
+
+.day-name {
+  font-size: 1.4rem;
+}
+
+.days-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 1.2rem 0.6rem;
+  justify-items: center;
+  row-gap: 0.5rem;
+}
+
+.day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.day-active {
+  background-color: #278439;
+}
+
+.day:hover {
+  background-color: #f1f3f5;
+  color: #278439;
+  cursor: pointer;
+}
+.day-active:hover {
+  background-color: #f3fbf4;
+  color: #1f632d;
+}

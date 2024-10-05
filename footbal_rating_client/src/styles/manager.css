@@ -1,0 +1,119 @@
+.manager-container {
+  margin: 2.4rem auto;
+  max-width: 100rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.2rem;
+  border-radius: 10px;
+  background-color: #202020;
+}
+
+@media screen and (max-width: 600px) {
+  .manager-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.manager-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
+  background-color: #2b2b2b;
+  border-radius: 10px;
+}
+
+.manager-item:last-child {
+  flex-direction: row-reverse;
+}
+@media screen and (max-width: 600px) {
+  .manager-item:last-child {
+    flex-direction: row;
+  }
+}
+.manager-item-name {
+  color: #f1f3f5;
+  flex-grow: 1;
+  font-size: 2.4rem;
+}
+
+@media screen and (max-width: 650px) {
+  .manager-item-name {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .manager-item-name {
+    font-size: 2.4rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  .manager-item-name {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 385px) {
+  .manager-item-name {
+    font-size: 1.8rem;
+  }
+}
+
+.manager-item:last-child .manager-item-name {
+  text-align: end;
+}
+@media screen and (max-width: 600px) {
+  .manager-item:last-child .manager-item-name {
+    text-align: start;
+  }
+}
+
+.manager-item .scorable-score-input {
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  width: 4.8rem;
+  background-color: #353535;
+  color: #f1f3f5;
+  text-align: center;
+  padding: 6px;
+  box-shadow: 0 0 0 2px transparent;
+  transition: all 0.2s;
+}
+
+@media screen and (max-width: 650px) {
+  .manager-item .scorable-score-input {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    width: 3.6rem;
+    padding: 4px;
+    border-radius: 4px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .manager-item .scorable-score-input {
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+    width: 4.8rem;
+    padding: 6px;
+    border-radius: 6px;
+  }
+}
+@media screen and (max-width: 385px) {
+  .manager-item .scorable-score-input {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    width: 4rem;
+    padding: 4px;
+    border-radius: 4px;
+  }
+}
+
+.scorable-score-input:focus {
+  box-shadow: 0 0 0 2px white;
+}

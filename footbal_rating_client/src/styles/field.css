@@ -1,0 +1,38 @@
+.field-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100rem;
+  height: 60rem;
+  margin: 4.8rem auto;
+}
+
+@media screen and (max-width: 1020px) {
+  .field-container {
+    width: 90rem;
+    height: 60rem;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .field-container {
+    width: 80rem;
+    height: 60rem;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .field-container {
+    width: 60rem;
+    height: 100rem;
+  }
+}
+
+.field-container .field-background {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.field-container .field-player-container {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}

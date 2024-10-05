@@ -1,0 +1,253 @@
+.field-player-container .jersey-container {
+  position: relative;
+}
+.field-player-container .jersey-inner-container {
+  width: 6.4rem;
+  height: auto;
+}
+.field-player-container .jersey-number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.field-player-container .scorable-score-input {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -110%);
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  width: 4.8rem;
+  background-color: #222;
+  color: #f1f3f5;
+  text-align: center;
+  padding: 0 2px;
+  box-shadow: 0 0 0 2px transparent;
+  transition: all 0.2s;
+}
+
+@media screen and (max-width: 820px) {
+  .field-player-container .scorable-score-input {
+    top: 50%;
+    right: 0;
+    transform: translate(40%, -10%);
+  }
+}
+
+.field-player-container .jersey-player-name {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  width: 100%;
+  font-weight: 600;
+  text-align: center;
+}
+
+.field-player-container .player-score-from-db {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -110%);
+  border-radius: 4px;
+  border: 2px solid #222;
+  padding: 2px 4px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #111111;
+}
+
+@media screen and (max-width: 820px) {
+  .field-player-container .player-score-from-db {
+    top: 50%;
+    right: 0;
+    transform: translate(55%, -10%);
+    padding: 2px;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
+
+.scorable-score-input:focus {
+  box-shadow: 0 0 0 2px white;
+}
+@media screen and (max-width: 600px) {
+  .player-list-container {
+    flex-wrap: wrap;
+  }
+}
+.player-list-container .jersey-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 345px) {
+  .player-list-container .jersey-container {
+    gap: 0.6rem;
+  }
+}
+
+.player-list-container .team-player-container:last-child .jersey-container {
+  flex-direction: row-reverse;
+}
+@media screen and (max-width: 600px) {
+  .player-list-container .team-player-container:last-child .jersey-container {
+    flex-direction: row;
+  }
+}
+
+.player-list-container .jersey-inner-container {
+  width: 6.4rem;
+  position: relative;
+  height: auto;
+}
+
+@media screen and (max-width: 650px) {
+  .player-list-container .jersey-inner-container {
+    width: 4.8rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .player-list-container .jersey-inner-container {
+    width: 6.4rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .player-list-container .jersey-inner-container {
+    width: 4.8rem;
+  }
+}
+
+@media screen and (max-width: 345px) {
+  .player-list-container .jersey-inner-container {
+    width: 3.6rem;
+  }
+}
+
+.player-list-container .jersey-number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 345px) {
+  .player-list-container .jersey-number {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+}
+
+.player-list-container .jersey-player-name {
+  color: #f1f3f5;
+  font-size: 2.4rem;
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 650px) {
+  .player-list-container .jersey-player-name {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .player-list-container .jersey-player-name {
+    font-size: 2.4rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  .player-list-container .jersey-player-name {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 385px) {
+  .player-list-container .jersey-player-name {
+    font-size: 1.8rem;
+  }
+}
+
+.player-list-container .team-player-container:last-child .jersey-player-name {
+  text-align: end;
+}
+@media screen and (max-width: 650px) {
+  .player-list-container .team-player-container:last-child .jersey-player-name {
+    text-align: start;
+  }
+}
+
+.player-list-container .scorable-score-input {
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  width: 4.8rem;
+  background-color: #353535;
+  color: #f1f3f5;
+  text-align: center;
+  padding: 6px;
+  box-shadow: 0 0 0 2px transparent;
+  transition: all 0.2s;
+}
+
+@media screen and (max-width: 650px) {
+  .player-list-container .scorable-score-input {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    width: 3.6rem;
+    padding: 4px;
+    border-radius: 4px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .player-list-container .scorable-score-input {
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+    width: 4.8rem;
+    padding: 6px;
+    border-radius: 6px;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .player-list-container .scorable-score-input {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    width: 4rem;
+    padding: 4px;
+    border-radius: 4px;
+  }
+}
+
+.player-list-container .player-score-from-db {
+  border-radius: 4px;
+  border: 2px solid #222;
+  padding: 2px 4px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #111111;
+}
+
+@media screen and (max-width: 650px) {
+  .player-list-container .player-score-from-db {
+    border: 2px solid rgba(255, 255, 255, 0.3);
+  }
+}

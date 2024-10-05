@@ -1,0 +1,13 @@
+.error-container {
+  display: flex;
+  color: #2f9e44;
+  font-size: 1.2rem;
+  align-self: flex-start;
+  padding-left: 0.6rem;
+  margin: -0.6rem 0 0 0;
+}
+
+.match-page-outer-container .error-container {
+  justify-content: center;
+  font-size: 1.6rem;
+}

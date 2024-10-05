@@ -1,0 +1,38 @@
+.player-list-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  max-width: 100rem;
+  margin: 1.6rem auto;
+  padding: 1.8rem 1.2rem;
+  border-radius: 10px;
+  background-color: #202020;
+}
+
+@media screen and (max-width: 385px) {
+  .player-list-container {
+    gap: 0.8rem;
+    padding: 1.2rem 0.8rem;
+  }
+}
+
+.team-player-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 385px) {
+  .team-player-container {
+    gap: 0.8rem;
+  }
+}
+
+.player-in-list-container {
+  width: 100%;
+  padding: 1.2rem;
+  background-color: #2b2b2b;
+  border-radius: 10px;
+}
